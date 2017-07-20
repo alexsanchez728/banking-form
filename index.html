@@ -2,43 +2,106 @@
 <html>
 <head>
 	<title>Banking From</title>
+	<link rel="stylesheet" type="text/css" href="form-style.css">
 </head>
 <body>
 
 <form>
-<input type="" name="">
-<input type="" name="">
-<input type="" name="">
-<input type="" name="">
-<input type="" name="">
-<input type="" name="">
-<input type="" name="">
-
-<select name="loan-type">
-  <option value="commercial">Commercial</option>
-  <option value="real-estate">Real estate</option>
-  <option value="personal">Personal</option>
-  <option value="mortgage">Mortgage</option>
-</select>
-
-<input type="" name="">
-<input type="radio" name="loan-length">
-<input type="radio" name="loan-length">
-<input type="radio" name="loan-length">
-
-<input type="checkbox" name="vehicle" value="Bike">
-<input type="checkbox" name="vehicle" value="Car" checked="checked">
-<input type="checkbox" name="vehicle" value="Bike">
-<input type="checkbox" name="vehicle" value="Car" checked="checked">
-
-<textarea name="message" rows="10" cols="30">
-The cat was playing in the garden.
-</textarea>
-
-<input type="" name="">
-<input type="" name="">
-<input type="" name="">
-
+	<fieldset>
+		<legend>Personal Information</legend>
+		<ul>
+		<li>
+			<label for="first-name">First Name:</label>
+			<input type="text" name="first-name">
+		</li>
+		<li>
+			<label for="middle-initial">Middle Initial:</label>
+			<input type="text" name="middle-initial">
+		</li>
+		<li>
+			<label for="last-name">Last Name:</label>
+			<input type="text" name="last-name">
+		</li>
+		<li>
+			<label for="applicant-address">Applicant's Address:</label>
+			<input type="text" name="applicant-address">
+		</li>
+		<li>
+			<label for="occupation">Occupation:</label>
+			<input type="text" name="occupation">
+		</li>
+		<li>
+			<label for="employer">Employer:</label>
+			<input type="text" name="employer">
+		</li>
+		<li>
+			<label for="employer-address">Employer's Address:	</label>
+			<input type="text" name="employer-address">
+		</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Loan Information</legend>
+		<p>
+			<label for="loan-type">Loan Type</label>
+			<select name="loan-type">
+			  <option value="commercial">Commercial</option>
+			  <option value="real-estate">Real estate</option>
+			  <option value="personal">Personal</option>
+			  <option value="mortgage">Mortgage</option>
+			</select>
+		</p>
+		<p>
+			<label for="loan-amount">Loan Amount</label>
+			<input type="number" name="loan-amount">
+		</p>
+			<label for="loan-length">Loan Length</label>
+			<ul>
+				<li>
+					<input type="radio" name="loan-length">	5 years
+				</li>
+				<li>
+					<input type="radio" name="loan-length">	15 years
+				</li>
+				<li>
+					<input type="radio" name="loan-length">	30 years
+				</li>
+			</ul>
+			<label for="special-condition">Special Conditions</label>
+			<ul>
+				<li>
+					<input type="checkbox" name="special-condition" value="down-payment">I have a down payment
+				</li>
+				<li>
+					<input type="checkbox" name="special-condition" value="out-of-state">Out-of-state-resident
+				</li>
+				<li>
+					<input type="checkbox" name="special-condition" value="married">Married
+				</li>
+				<li>
+					<input type="checkbox" name="special-condition" value="co-signed">Loan will be co-signed
+				</li>
+			</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Additional Information</legend>
+			<label for="message">Additional Comments</label>
+			<textarea name="message" rows="4" cols="40">"I just can't wait to take out this loan and be in debt for the rest of time!"</textarea>
+		<ul>
+			<li>
+				<label>Applicant Email Address</label>
+				<input type="email" name="applicant-email">
+			</li>
+			<li>
+				<label>Applicant Phone Number</label>
+				<input type="tel" name="applicant-phone">
+			</li>
+			<li>
+				<label>Applicant LinkedIn url</label>
+				<input type="url" name="linkedin">
+			</li>
+		</ul>
+	</fieldset>
 </form>
 
 </body>
